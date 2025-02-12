@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>    
+        <div>
+            <h1> Example Page</h1>
+            <form actions = "/login" method = "POST">   
+            <label>Username: </label> 
+            <br>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <br>
+            <label>Password: </label> 
+            <br>
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <br>
+            {%if error%}
+            <a>{{ error }} </a>
+            <br>
+            {%endif%}
+            <button type="submit" class = "classic-button">Login</button> 
+            <br>
+
+        </form>
+        </div>
+    </body> 
+</html>
